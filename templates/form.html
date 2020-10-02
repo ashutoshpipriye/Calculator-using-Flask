@@ -19,13 +19,13 @@
 					<div class="form-group">
 						<label class="control-label col-xs-3" for="var_1">Number1 :</label>
 						<div class="col-xs-7">
-							<input type="number" class="form-control" name="var_1" placeholder="&nbsp;0&nbsp;">
+							<input type="number" class="form-control" name="var_1"  value="{{ request.form['var_1'] }}" placeholder="&nbsp;0&nbsp;">
 						</div>
 					</div>
 					<div class="form-group">
 						<label class="control-label col-xs-3" for="var_1">Number2 :</label>
 						<div class="col-xs-7">
-							<input type="number" class="form-control" name="var_2" placeholder="&nbsp;0&nbsp;">
+							<input type="number" class="form-control" name="var_2"  value="{{ request.form['var_2'] }}" placeholder="&nbsp;0&nbsp;">
 						</div>
 					</div>
 					<div class="form-group">
@@ -46,7 +46,7 @@
             			</div>
 					</div>
 					<div class="form-group">
-						<label class="control-label col-xs-3" for="var_1">Result :</label>
+						<label class="control-label col-xs-3">Result :</label>
 						<div class="col-xs-7">
 							<input type="text" name="result" class="form-control" placeholder={{ entry }}>
 						</div>
